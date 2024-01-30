@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "typescript",
+      "tsconfig": "packages/smarts/tsconfig.json",
+      "option": "watch",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "label": "Smarts - TS Watch"
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "path": "examples/nextjs",
+      "problemMatcher": [],
+      "label": "NextJS Smarts - Dev",
+      "detail": "next dev",
+      "dependsOn": ["Smarts - TS Watch"]
+    },
+    {
+      "type": "npm",
+      "script": "cy:open",
+      "path": "packages/e2e-spec",
+      "problemMatcher": [],
+      "label": "E2E Spec - Open Cypress",
+      "detail": "cypress open"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "examples/nextjs",
+      "problemMatcher": [],
+      "label": "NextJS Smarts - Start",
+      "detail": "next start",
+      "dependsOn": ["NextJS Smarts - Build"]
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "examples/nextjs",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "NextJS Smarts - Build",
+      "detail": "next build"
+    }
+  ]
+}

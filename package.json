@@ -1,0 +1,14 @@
+{
+  "name": "wix-smarts-repo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "prettier": "3.2.4"
+  }
+}
