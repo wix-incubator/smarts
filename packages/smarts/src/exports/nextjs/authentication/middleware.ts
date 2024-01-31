@@ -34,7 +34,7 @@ export async function middleware(request: NextRequest) {
 
   if (!process.env.WIX_CLIENT_ID) {
     throw new Error(
-      "WIX_CLIENT_ID environment variable is not set. Ensure you have set up your environment variables correctly."
+      "WIX_CLIENT_ID environment variable is not set. Ensure you have set up your environment variables correctly.",
     );
   }
 
@@ -47,7 +47,7 @@ export async function middleware(request: NextRequest) {
     JSON.stringify(tokens.refreshToken),
     {
       maxAge: 60 * 60 * 24 * 30,
-    }
+    },
   );
   return res;
 }

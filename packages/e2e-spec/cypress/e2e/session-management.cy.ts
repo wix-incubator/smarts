@@ -9,7 +9,7 @@ describe("session management", () => {
         cy.getCookie("wix-refresh-token").should(
           "have.a.property",
           "value",
-          refreshToken
+          refreshToken,
         );
       });
   });
