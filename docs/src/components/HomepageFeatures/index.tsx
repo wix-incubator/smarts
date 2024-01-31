@@ -57,7 +57,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: "Performant & Accissible",
+    title: "Performant & Accessible",
     Svg: require("@site/static/img/undraw_performance_overview_re_mqrq.svg")
       .default,
     description: (
