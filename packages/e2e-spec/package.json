@@ -6,12 +6,13 @@
     "@testing-library/cypress": "^10.0.1",
     "cypress": "^13.6.3",
     "start-server-and-test": "^2.0.3",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "wix-smarts-nextjs": "0.1.0"
   },
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "start:nextjs": "cd ../../examples/nextjs && npm run build && npm run start",
+    "start:nextjs": "cd ../../examples/nextjs && npm run start",
     "test:nextjs-start": "start-server-and-test 'start:nextjs' http://localhost:3000 'cy:run'"
   }
 }
